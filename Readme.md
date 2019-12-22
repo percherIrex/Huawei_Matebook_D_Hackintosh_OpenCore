@@ -6,13 +6,13 @@
 |:--------------:|:------------------------------------------------------------------------------------------------------------------:|
 | Graphics Cards | Intel UHD620 / nVidia MX150                                                                                        |
 | Memory         | 8GB*2 DDR4 2400                                                                                                    |
-| Keyboard       | PS2 Keyboard with no backlight🙃                                                                                   |
+| Keyboard       | PS2 Keyboard without backlight🙃                                                                                   |
 | Trackpad       | ELAN2202(Requires _OSI Patch to enable APCI interrupt)                                                             |
 | Sound Card     | ALC256                                                                                                             |
 | Screen         | 15.6‘ 1920x1080                                                                                                    |
 | SSD            | Hikivision C2000 512GB + LITE-ON 128GB SATA m.2                                                                    |
 | WiFi+BT        | Apple Broadcom BCM94360CS2                                                                                         |
-| Processor      | Intel Core I5 8250U / I7 8550U (you need to generate a new CpuFridendDataProvider if you have an I5-8250U version) |
+| Processor      | Intel Core I5 8250U / I7 8550U (a new CpuFridendDataProvider is needed if you have an I5-8250U version) |
 
 ---------
 
@@ -67,5 +67,11 @@
 7. The Clover EFI I have used by [MOJUNSHOU](https://github.com/MOJUNSHOU) : [MateBooK-D](https://github.com/MOJUNSHOU/MateBooK-D)
 
 -----
+## Screenshot & How I put BCM94360CS2 into the laptop
+
+![  ](https://github.com/Zero-zer0/Matebook_D_Hackintosh_OpenCore/blob/master/截屏2019-12-22下午10.28.37.png)
+
+![   ](https://github.com/Zero-zer0/Matebook_D_Hackintosh_OpenCore/blob/master/BCM94360CS2.jpg)
+
 
 
