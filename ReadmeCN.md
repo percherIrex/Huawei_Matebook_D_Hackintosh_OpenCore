@@ -22,6 +22,7 @@
 
 * 基于OpenCore 0.5.3 
 <br>
+
 * 原生(?) NVRAM 正常工作。
 <br>
 
@@ -30,6 +31,7 @@
 * ~~CFG被锁了，但是一切能用~~
     解锁CFG与改变DVMT大小的方法已经找到了，晚些更新。
 <br>
+
 * 网卡换为BCM94360CS2. 使用 [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup) + `brcmfx-country=#a`开启所有频段。
 <br>
 
