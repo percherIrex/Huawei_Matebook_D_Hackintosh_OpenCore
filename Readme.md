@@ -43,7 +43,8 @@
 * You may need to use your own System-UUID when you need dual boot with Windows 10.  
 
 * Minor bugs: 
-    1. Screen backlight requires a second-open to turn on after closing lid.
+    1. ~~Screen backlight requires a second-open to turn on after closing lid.~~  Now fixed by `SSDT-LID-Wake-After-Sleep` ,thanks to [hjmmc](https://github.com/hjmmc) : [Honor-Magicbook](https://github.com/hjmmc/Honor-Magicbook)
+    I added a `_OSI`  determination to meet the needs of dual boot with Windows/Linux by OpenCore though it's not recommended.  
     2. Trackpad doesn't work and a USB mouse is needed when installing.
 
 ------
@@ -54,7 +55,7 @@
 
 * Improvements on Hibernation.
 
-* BIOS unlock.
+* BIOS unlock tutorial.
 
 * ~~Windows 10 startup item in OpenCore (I think using boot menu is a better choice)~~
     Never use OpenCore to boot windows. Using Boot Menu is recommended.
@@ -76,6 +77,8 @@
 6. [Steve Zheng](https://github.com/stevezhengshiqi) for [one-key-cpufriend](https://github.com/stevezhengshiqi/one-key-cpufriend) and [XiaoMi-Pro-Hackintosh](https://github.com/daliansky/XiaoMi-Pro-Hackintosh)
 
 7. The Clover EFI I have used by [MOJUNSHOU](https://github.com/MOJUNSHOU) : [MateBooK-D](https://github.com/MOJUNSHOU/MateBooK-D)
+
+8. The LID and Brightness-Key fix by [hjmmc](https://github.com/hjmmc) : [Honor-Magicbook](https://github.com/hjmmc/Honor-Magicbook)
 
 -----
 ## Screenshot & How I put BCM94360CS2 into the laptop
