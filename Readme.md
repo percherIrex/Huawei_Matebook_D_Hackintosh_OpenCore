@@ -1,6 +1,6 @@
 # Matebook_D_Hackintosh_OpenCore
 
-## Huawei Matebook D 2018(I7 8550U)
+## Huawei Matebook D 2018 (I7 8550U)
 
 | Specifications | Details                                                                                                            |
 |:--------------:|:------------------------------------------------------------------------------------------------------------------:|
@@ -18,25 +18,33 @@
 
 ## Current Status
 
+### **Basic knowledge on OpenCore is needed!**
+
 * Based on OpenCore Official Release 0.5.3
 
 * Native(?) NVRAM works.
 
 * Soundcard with injected Layout-ID 21 works well.
 
-* CFG Lock cannot be unlocked in Huawei's fxxking BIOS. However everything just works. I'm not able to modify the confusing InsydeH2O BIOS now.
+* ~~CFG Lock cannot be unlocked in Huawei's fxxking BIOS. However everything just works. I'm not able to modify the confusing InsydeH2O BIOS now.~~
+    The way to modify BIOS is found, I'll update later to explain how to unlock CFG and change DVMT.
 
-* Replaced stock Intel Wireless 8265AC with BCM94360CS2 with an adapter. Using [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup) with `brcmfx-country=#a`to enable all WiFi channels.
+* Replaced stock Intel Wireless 8265AC with BCM94360CS2 and an adapter. Using [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup) with `brcmfx-country=#a`to enable all WiFi channels.
 
 * Use [one-key-cpufriend](https://github.com/stevezhengshiqi/one-key-cpufriend) to gain a better CPU power management.
 
 * DGPU nVidia MX150 is disabled by SSDT-DDGPU.
 
-* Minor bug: Screen backlight requires a second-open to turn on after closing lid.
+* **Use `USBInjectall.kext` to avoid potential USB map differences. However, customizing your own `USBports.kext` by [Hackintool](http://headsoft.com.au/download/mac/Hackintool.zip) is STRONGLY RECOMMENDED. You can read the help document inside for more details.**
 
-* This EFI may also works on Magicbook 14 Kabylake. ( Just I guess, it may need some minor modifications)
 
-* You may need to use your own System-UUID when you need dual boot with Windows 10.
+* This EFI may also works on Magicbook 14 Kabylake-R. ( Just I guess, it may need some minor modifications)
+
+* You may need to use your own System-UUID when you need dual boot with Windows 10.  
+
+* Minor bugs: 
+    1. Screen backlight requires a second-open to turn on after closing lid.
+    2. Trackpad doesn't work and a USB mouse is needed when installing.
 
 ------
 
@@ -46,7 +54,10 @@
 
 * Improvements on Hibernation.
 
-* Windows 10 startup item in OpenCore (I think using boot menu is a better choice)
+* BIOS unlock.
+
+* ~~Windows 10 startup item in OpenCore (I think using boot menu is a better choice)~~
+    Never use OpenCore to boot windows. Using Boot Menu is recommended.
 
 ------
 
