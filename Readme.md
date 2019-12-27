@@ -1,5 +1,7 @@
 # Matebook_D_Hackintosh_OpenCore
 
+Language:   
+English | [简体中文](https://github.com/Zero-zer0/Huawei_Matebook_D_Hackintosh_OpenCore/blob/master/ReadmeCN.md)
 ## Huawei Matebook D 2018 (I7 8550U)
 
 | Specifications | Details                                                                                                            |
