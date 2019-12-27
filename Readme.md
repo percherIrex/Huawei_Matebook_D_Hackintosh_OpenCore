@@ -43,8 +43,10 @@
 * You may need to use your own System-UUID when you need dual boot with Windows 10.  
 
 * Minor bugs: 
-    1. ~~Screen backlight requires a second-open to turn on after closing lid.~~  Now fixed by `SSDT-LID-Wake-After-Sleep` ,thanks to [hjmmc](https://github.com/hjmmc) : [Honor-Magicbook](https://github.com/hjmmc/Honor-Magicbook)
+    1. ~~Screen backlight requires a second-open to turn on after closing lid.~~    
+    Now fixed by `SSDT-LID-Wake-After-Sleep` ,thanks to [hjmmc](https://github.com/hjmmc) : [Honor-Magicbook](https://github.com/hjmmc/Honor-Magicbook) <br>   
     I added a `_OSI`  determination to meet the needs of dual boot with Windows/Linux by OpenCore though it's not recommended.  
+
     2. Trackpad doesn't work and a USB mouse is needed when installing.
 
 ------
@@ -57,8 +59,9 @@
 
 * BIOS unlock tutorial.
 
-* ~~Windows 10 startup item in OpenCore (I think using boot menu is a better choice)~~
-    Never use OpenCore to boot windows. Using Boot Menu is recommended.
+* ~~Windows 10 startup item in OpenCore (I think using boot menu is a better choice)~~  <br>
+
+    Do NOT use OpenCore to boot windows. Using Boot Menu is recommended.
 
 ------
 
